@@ -1,0 +1,38 @@
+name: '"Apimap Publish" Action For GitHub Actions'
+description: 'Configure and publish to Apimap'
+inputs:
+  api:
+    description: 'The URL for the apimap endpoint'
+    required: true
+  orchestra:
+    description: 'The URL for the apimap orchestra endpoint'
+    required: true
+  audience:
+    description: 'Audience to be used with OIDC. This must match the audience in your orchestra instance'
+    required: false
+    default: 'apimap'
+  metadata:
+    description: 'Filepath to the file that contains metadata'
+    required: true
+    default: 'apimap/metadata.apimap'
+  taxonomy:
+    description: 'Filepath to the file that contains taxonomy urns'
+    required: true
+    default: 'apimap/taxonomy.apimap'
+  readme:
+    description: 'Filepath to the file that contains README content'
+    required: false
+    default: 'README.md'
+  changelog:
+    description: 'Filepath to the file that contains CHANGELOG content'
+    required: false
+    default: 'CHANGELOG.md'
+  token:
+    description: 'Access token unique for each API. This token is only available when the API is created.'
+    required: false
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
+branding:
+  icon: 'book'
+  color: 'purple'

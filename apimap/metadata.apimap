@@ -1,0 +1,16 @@
+{
+    "data": {
+        "name": "Hello World 3",
+        "description": "Hello World 3",
+        "visibility": "Public",
+        "api version": "1",
+        "release status": "In Production",
+        "interface specification": "JSON:API v1.1",
+        "interface description language": "OpenAPI Specification",
+        "architecture layer": "Backend",
+        "business unit": "Apimap.io",
+        "system identifier": "My System 2",
+        "documentation": ["http://apimap.io"]
+  },
+  "api catalog version": "1"
+}

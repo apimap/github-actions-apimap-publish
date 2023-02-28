@@ -1,0 +1,16 @@
+{
+  "branches": "main",
+  "debug": "true",
+  "plugins": [
+    [
+      "@semantic-release/github",
+      {
+        "assets": [
+          {
+            "path": "dist/**"
+          }
+        ]
+      }
+    ]
+  ]
+}
